@@ -56,7 +56,7 @@ class Agent:
 
 @st.cache_resource(ttl=3600)
 def create_agent() -> Agent:
-    return Agent(persist_dir="./chroma_db", temperature=0.8)
+    return Agent(persist_dir="./memory", temperature=0.8)
 
 
 def main():
